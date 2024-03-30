@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Fliper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="first">Color Fliper</a>
+      <a href="Hex-color.html" class="sec">simple RGB</a>
+    </nav>
+    <section class="background">
+      <p class="back-1">
+        Hex color Code :
+        <span
+          class="hex"
+          style="color: rgb(3, 87, 205); font-family: 'Patua One', serif"
+          >Red</span
+        >
+      </p>
+      <button onclick="changeColor()" class="back-2">Try Me</button>
+    </section>
+    <script>
+      function changeColor() {
+        let red = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let color = "rgb(" + red + "," + green + "," + blue + ")";
+        document.getElementsByClassName("background")[0].style.backgroundColor =
+          color;
+        document.getElementsByClassName("hex")[0].textContent = color;
+      }
+    </script>
+  </body>
+</html>
