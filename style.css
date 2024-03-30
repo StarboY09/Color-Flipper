@@ -1,0 +1,48 @@
+.navbar {
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar > a {
+  font-family: Edu NSW ACT Foundation;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.background {
+  background-color: #663399;
+  height: 90vh;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-1 {
+  background-color: rgba(0, 0, 0, 0.793);
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.944);
+  padding: 15px;
+  border-radius: 5px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.back-2 {
+  font-size: 20px;
+  background-color: transparent;
+  border: 3px black solid;
+  border-radius: 5px;
+  color: black;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
